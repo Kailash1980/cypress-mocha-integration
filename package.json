@@ -1,0 +1,27 @@
+{
+  "name": "lets_share_automation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean:reports": "rimraf cypress/reports",
+    "pretest": "npm run clean:reports",
+    "scripts": "cypress run",
+    "combine-reports": "npx mochawesome-merge --reportDir cypress/reports/mocha > cypress/reports/mocha/output.json",
+    "generate-reports": "marge cypress/reports/mocha/output.json -f report -o cypress/reports/mochareports",
+    "posttest": "npm run combine-reports && npm run generate-reports",
+    "test": "npm run scripts || npm run posttest"
+  },
+  "author": "Kailash Pathak",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^3.5.0"
+  },
+  "devDependencies": {
+    "cypress": "^3.8.1",
+    "mocha": "^5.2.0",
+    "mochawesome": "^4.1.0",
+    "mochawesome-merge": "^2.1.0",
+    "mochawesome-report-generator": "^4.0.1"
+  }
+}

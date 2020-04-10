@@ -1,0 +1,12 @@
+{
+    "TC001": {
+        "userName": "letshare.test@3pillarglobal.com",
+        "passWord": "1234",
+        "homepageheadertext": "DASHBOARD"
+    },
+    "TC002": {
+        "userName": "multiphotopdfdesignertest@yopmail.com",
+        "passWord": "canvas",
+         "invalidusernamepasswordtext": "No user associated with"
+    }
+}
