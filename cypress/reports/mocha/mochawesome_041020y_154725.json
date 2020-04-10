@@ -1,0 +1,124 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-04-10T10:17:13.849Z",
+    "end": "2020-04-10T10:17:25.484Z",
+    "duration": 11635,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "c8c882b9-fe7e-41e9-8587-9ae88c8abc8b",
+      "title": "",
+      "fullFile": "cypress\\integration\\letsShare\\signup\\loginpage.spec.js",
+      "file": "cypress\\integration\\letsShare\\signup\\loginpage.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "ef0d6680-003c-4fe4-aeaf-7552bd8932c5",
+          "title": "Login -Test Suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login into the application with valid crediential",
+              "fullTitle": "Login -Test Suite Login into the application with valid crediential",
+              "timedOut": null,
+              "duration": 7388,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enetURL();\nloginPage.enterUserNamePassword(this.data001.userName, this.data001.passWord);\nloginPage.verifyHomePageText(this.data001.homepageheadertext);\nloginPage.clickLogout();",
+              "err": {},
+              "uuid": "5188c408-b96a-40f1-89ac-93c3d60ced82",
+              "parentUUID": "ef0d6680-003c-4fe4-aeaf-7552bd8932c5",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Login into the application with Invalid crediential",
+              "fullTitle": "Login -Test Suite Login into the application with Invalid crediential",
+              "timedOut": null,
+              "duration": 2557,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enetURL();\nloginPage.enterUserNamePassword(this.data002.userName, this.data002.passWord);\nloginPage.verifyHomePageText(this.data002.invalidusernamepasswordtext);",
+              "err": {},
+              "uuid": "410a0582-c1b3-4e03-b845-c294fc74b46d",
+              "parentUUID": "ef0d6680-003c-4fe4-aeaf-7552bd8932c5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5188c408-b96a-40f1-89ac-93c3d60ced82",
+            "410a0582-c1b3-4e03-b845-c294fc74b46d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 9945,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyy_HHMMss"
+      },
+      "version": "4.1.0"
+    }
+  }
+}
