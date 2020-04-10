@@ -12,7 +12,7 @@ beforeEach('read test data', function () {
 
 })
 
-describe('Sign up Test Suite', function () {
+describe('Login - Test Suite', function () {
 
     it("Login into the application with valid crediential", function () {
         loginPage.enetURL()
