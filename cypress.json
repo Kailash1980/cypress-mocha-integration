@@ -11,5 +11,8 @@
     "json": true,
     "timestamp": "mmddyyy_HHMMss"
   },
-  "screenshotsFolder": "cypress/reports/screenshots"
+  "screenshotsFolder": "cypress/reports/screenshots",
+  "env": {
+    "env": "3.84.11.0/login"
+  }
 }

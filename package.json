@@ -6,7 +6,7 @@
   "scripts": {
     "clean:reports": "rimraf cypress/reports",
     "pretest": "npm run clean:reports",
-    "scripts": "cypress run",
+    "scripts": "cypress run --headless --browser chrome",
     "combine-reports": "npx mochawesome-merge --reportDir cypress/reports/mocha > cypress/reports/mocha/output.json",
     "generate-reports": "marge cypress/reports/mocha/output.json -f report -o cypress/reports/mochareports",
     "posttest": "npm run combine-reports && npm run generate-reports",
