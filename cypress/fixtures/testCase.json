@@ -8,5 +8,15 @@
         "userName": "multiphotopdfdesignertest@yopmail.com",
         "passWord": "canvas",
          "invalidusernamepasswordtext": "No user associated with"
-    }
+    },
+
+     "TC003": {
+         "topic": "Topic",
+         "topicvalue": "React",
+         "title": "What is the difference between React Native and React?",
+         "description": "I have started to learn React out of curiosity and wanted to know the difference between React and React Native",
+         "questionsavedmsg": "Your Question Posted Successfully",
+         "keepdescriptionblankmsg":"Please add the Question Description",
+         "keeptopicblankmsg": "Please select Topic for the Question"
+     }
 }

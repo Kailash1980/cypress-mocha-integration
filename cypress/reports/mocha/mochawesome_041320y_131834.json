@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2020-04-11T14:57:45.748Z",
-    "end": "2020-04-11T14:58:08.296Z",
-    "duration": 22548,
+    "start": "2020-04-13T07:48:17.215Z",
+    "end": "2020-04-13T07:48:34.321Z",
+    "duration": 17106,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,17 +18,17 @@
   },
   "results": [
     {
-      "uuid": "69aaf17d-6d36-477b-8e13-10aee1e7f35a",
+      "uuid": "a847f370-5f38-4b48-bda5-050539496069",
       "title": "",
-      "fullFile": "cypress\\integration\\letsShare\\signup\\loginpage.spec.js",
-      "file": "cypress\\integration\\letsShare\\signup\\loginpage.spec.js",
+      "fullFile": "cypress\\integration\\letsShare\\login\\loginpage.spec.js",
+      "file": "cypress\\integration\\letsShare\\login\\loginpage.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "336bfdf2-48e4-47b8-b838-4eb19769086c",
-          "title": "Sign Up -Test Suite",
+          "uuid": "088be77c-b144-40ed-ba0b-b54dff31528b",
+          "title": "Login - Test Suite",
           "fullFile": "",
           "file": "",
           "beforeHooks": [],
@@ -36,9 +36,9 @@
           "tests": [
             {
               "title": "Login into the application with valid crediential",
-              "fullTitle": "Sign Up -Test Suite Login into the application with valid crediential",
+              "fullTitle": "Login - Test Suite Login into the application with valid crediential",
               "timedOut": null,
-              "duration": 15233,
+              "duration": 11510,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,16 +47,16 @@
               "context": null,
               "code": "loginPage.enterUserNamePassword(this.data001.userName, this.data001.passWord);\nloginPage.verifyHomePageText(this.data001.homepageheadertext);\nloginPage.clickLogout();",
               "err": {},
-              "uuid": "1f157aa4-4cd3-47e2-b4b7-8c4072f7241f",
-              "parentUUID": "336bfdf2-48e4-47b8-b838-4eb19769086c",
+              "uuid": "80d8a18e-f165-4356-aa38-1c3e1a5917a1",
+              "parentUUID": "088be77c-b144-40ed-ba0b-b54dff31528b",
               "isHook": false,
               "skipped": false
             },
             {
               "title": "Login into the application with Invalid crediential",
-              "fullTitle": "Sign Up -Test Suite Login into the application with Invalid crediential",
+              "fullTitle": "Login - Test Suite Login into the application with Invalid crediential",
               "timedOut": null,
-              "duration": 2855,
+              "duration": 3588,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "loginPage.enterUserNamePassword(this.data002.userName, this.data002.passWord);\nloginPage.verifyHomePageText(this.data002.invalidusernamepasswordtext);",
               "err": {},
-              "uuid": "fba446b6-e0f0-42d8-a64b-1f14254dd624",
-              "parentUUID": "336bfdf2-48e4-47b8-b838-4eb19769086c",
+              "uuid": "3266895e-3518-4323-9d40-8b1d29df9915",
+              "parentUUID": "088be77c-b144-40ed-ba0b-b54dff31528b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1f157aa4-4cd3-47e2-b4b7-8c4072f7241f",
-            "fba446b6-e0f0-42d8-a64b-1f14254dd624"
+            "80d8a18e-f165-4356-aa38-1c3e1a5917a1",
+            "3266895e-3518-4323-9d40-8b1d29df9915"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 18088,
+          "duration": 15098,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
