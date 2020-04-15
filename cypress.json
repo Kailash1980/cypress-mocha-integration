@@ -13,6 +13,6 @@
   },
   "screenshotsFolder": "cypress/reports/screenshots",
   "env": {
-    "env": "3.84.11.0/login"
+    "env": "http://3.84.11.0/login"
   }
 }
