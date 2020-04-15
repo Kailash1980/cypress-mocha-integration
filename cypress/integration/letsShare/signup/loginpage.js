@@ -9,7 +9,7 @@ beforeEach('read test data', function () {
         this.data001 = data['TC001']
         this.data002 = data['TC002']
     })
-    cy.visit('https://' + Cypress.env('env'))
+      cy.visit('http://' + Cypress.env('env'))
 })
 
 describe('Sign Up -Test Suite', function () {

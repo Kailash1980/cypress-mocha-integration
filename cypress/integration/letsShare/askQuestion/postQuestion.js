@@ -12,7 +12,7 @@ beforeEach('read test data', function () {
         this.data002 = data['TC002']
         this.data003 = data['TC003']
     })
-    cy.visit('https://' + Cypress.env('env'))
+    cy.visit('http://' + Cypress.env('env'))
 })
 
 describe('Post Question', function () {
