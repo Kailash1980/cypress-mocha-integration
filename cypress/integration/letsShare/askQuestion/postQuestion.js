@@ -17,7 +17,7 @@ beforeEach('read test data', function () {
 
 describe('Post Question', function () {
 
-    it("Enter data in all field and click on post button", function () {
+    it("To verify when user enter data in all field and click on post button", function () {
         loginPage.enterUserNamePassword(this.data001.userName, this.data001.passWord)
         postQuestion.clickAskQuestion();
         postQuestion.fillAskQuestionWithValidData(this.data003.topic, this.data003.topicvalue, this.data003.title,
