@@ -1,7 +1,7 @@
 /// <reference types ="cypress"/>
 
-import LoginPage from '../../../support/page_data/loginpage/login_page'
-import PostQuestion from '../../../support/page_data/postQuestion/post_question'
+import LoginPage from '../../../support/page_data/loginpage/login_page.spec'
+import PostQuestion from '../../../support/page_data/postQuestion/post_question.spec'
 
 const loginPage = new LoginPage()
 const postQuestion = new PostQuestion()

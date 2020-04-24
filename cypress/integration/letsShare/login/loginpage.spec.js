@@ -1,10 +1,10 @@
 /// <reference types ="cypress"/>
 
-import LoginPage from '../../../support/page_data/loginpage/login_page'
+import LoginPage from '../../../support/page_data/loginpage/login_page.spec'
 
 const loginPage = new LoginPage()
 
-beforeEach('read test data', function () {
+before('read test data', function () {
     cy.fixture('testCase').then((data) => {
         this.data001 = data['TC001']
         this.data002 = data['TC002']
@@ -22,6 +22,6 @@ describe('Login - Test Suite', function () {
 
     it("Login into the application with Invalid crediential", function () {
         loginPage.enterUserNamePassword(this.data002.userName, this.data002.passWord)
-        loginPage.verifyHomePageText(this.data002.invalidusernamepasswordtext)
+        loginPage.verifyInvalidLoginText(this.data002.invalidusernamepasswordtext)
     })
 })

@@ -2,14 +2,14 @@
   "stats": {
     "suites": 3,
     "tests": 6,
-    "passes": 6,
+    "passes": 5,
     "pending": 0,
-    "failures": 0,
-    "start": "2020-04-15T06:27:38.615Z",
-    "end": "2020-04-15T06:27:38.616Z",
-    "duration": 60399,
+    "failures": 1,
+    "start": "2020-04-21T08:02:00.167Z",
+    "end": "2020-04-21T08:02:00.167Z",
+    "duration": 43783,
     "testsRegistered": 6,
-    "passPercent": 100,
+    "passPercent": 83.33333333333333,
     "pendingPercent": 0,
     "other": 0,
     "hasOther": false,
@@ -18,16 +18,16 @@
   },
   "results": [
     {
-      "uuid": "2192ab9e-59f8-42f7-857b-05319336a5ef",
+      "uuid": "7e759301-0ee3-405c-9405-dc994c23b15a",
       "title": "",
-      "fullFile": "cypress\\integration\\letsShare\\askQuestion\\postquestion.js",
-      "file": "cypress\\integration\\letsShare\\askQuestion\\postquestion.js",
+      "fullFile": "cypress\\integration\\letsShare\\askQuestion\\postquestion.spec.js",
+      "file": "cypress\\integration\\letsShare\\askQuestion\\postquestion.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "27c9c1dc-5e24-4b8c-b64b-c38e5633a1af",
+          "uuid": "48760df1-ed79-41aa-b816-2dbe72c593a0",
           "title": "Post Question",
           "fullFile": "",
           "file": "",
@@ -35,10 +35,10 @@
           "afterHooks": [],
           "tests": [
             {
-              "title": "Enter data in all field and click on post button",
-              "fullTitle": "Post Question Enter data in all field and click on post button",
+              "title": "To verify when user enter data in all field and click on post button",
+              "fullTitle": "Post Question To verify when user enter data in all field and click on post button",
               "timedOut": null,
-              "duration": 22631,
+              "duration": 15607,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "loginPage.enterUserNamePassword(this.data001.userName, this.data001.passWord);\npostQuestion.clickAskQuestion();\npostQuestion.fillAskQuestionWithValidData(this.data003.topic, this.data003.topicvalue, this.data003.title, this.data003.description, this.data003.questionsavedmsg);\nloginPage.clickLogout();",
               "err": {},
-              "uuid": "fbefeef3-f055-40a1-9527-135eebcf3bf4",
-              "parentUUID": "27c9c1dc-5e24-4b8c-b64b-c38e5633a1af",
+              "uuid": "4c6a6fad-8eae-4990-a73b-1a3246e3d16c",
+              "parentUUID": "48760df1-ed79-41aa-b816-2dbe72c593a0",
               "isHook": false,
               "skipped": false
             },
@@ -56,30 +56,35 @@
               "title": "To verify when user keep description field blank and click on post button",
               "fullTitle": "Post Question To verify when user keep description field blank and click on post button",
               "timedOut": null,
-              "duration": 5152,
-              "state": "passed",
-              "speed": "slow",
-              "pass": true,
-              "fail": false,
+              "duration": 12664,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
               "pending": false,
-              "context": null,
+              "context": "\"../screenshots/letsShare\\\\askQuestion\\\\postquestion.spec.js/Post Question -- To verify when user keep description field blank and click on post button (failed).png\"",
               "code": "loginPage.enterUserNamePassword(this.data001.userName, this.data001.passWord);\npostQuestion.clickAskQuestion();\npostQuestion.fillAskQuestionWithInValidData(this.data003.keepdescriptionblankmsg);\nloginPage.clickLogout();",
-              "err": {},
-              "uuid": "9f6a5556-7aa9-4263-8497-f96b74220d9d",
-              "parentUUID": "27c9c1dc-5e24-4b8c-b64b-c38e5633a1af",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `.hJaQBP`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `.hJaQBP`, but never found it.\n    at ensureExistence (http://3.84.11.0/__cypress/runner/cypress_runner.js:137438:32)\n    at Object.ensureElExistence (http://3.84.11.0/__cypress/runner/cypress_runner.js:137456:12)\n    at ensureExistence (http://3.84.11.0/__cypress/runner/cypress_runner.js:127861:23)\n    at onFailFn (http://3.84.11.0/__cypress/runner/cypress_runner.js:127899:9)\n    at tryCatcher (http://3.84.11.0/__cypress/runner/cypress_runner.js:9059:23)\n    at Promise._settlePromiseFromHandler (http://3.84.11.0/__cypress/runner/cypress_runner.js:6994:31)\n    at Promise._settlePromise (http://3.84.11.0/__cypress/runner/cypress_runner.js:7051:18)\n    at Promise._settlePromise0 (http://3.84.11.0/__cypress/runner/cypress_runner.js:7096:10)\n    at Promise._settlePromises (http://3.84.11.0/__cypress/runner/cypress_runner.js:7172:18)\n    at _drainQueueStep (http://3.84.11.0/__cypress/runner/cypress_runner.js:3766:12)\n    at _drainQueue (http://3.84.11.0/__cypress/runner/cypress_runner.js:3759:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://3.84.11.0/__cypress/runner/cypress_runner.js:3775:5)\n    at Async.drainQueues (http://3.84.11.0/__cypress/runner/cypress_runner.js:3645:14)",
+                "diff": null
+              },
+              "uuid": "ea7c5143-7a28-4a90-9653-86869ae43b75",
+              "parentUUID": "48760df1-ed79-41aa-b816-2dbe72c593a0",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "fbefeef3-f055-40a1-9527-135eebcf3bf4",
-            "9f6a5556-7aa9-4263-8497-f96b74220d9d"
+            "4c6a6fad-8eae-4990-a73b-1a3246e3d16c"
           ],
-          "failures": [],
+          "failures": [
+            "ea7c5143-7a28-4a90-9653-86869ae43b75"
+          ],
           "pending": [],
           "skipped": [],
-          "duration": 27783,
+          "duration": 28271,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -95,16 +100,16 @@
       "_timeout": 2000
     },
     {
-      "uuid": "54fb168d-a41c-475a-a51a-d18befddc6c6",
+      "uuid": "ead1fc24-eab2-4438-ad6f-0300d28da8a9",
       "title": "",
-      "fullFile": "cypress\\integration\\letsShare\\login\\loginpage.js",
-      "file": "cypress\\integration\\letsShare\\login\\loginpage.js",
+      "fullFile": "cypress\\integration\\letsShare\\login\\loginpage.spec.js",
+      "file": "cypress\\integration\\letsShare\\login\\loginpage.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "7774c4ff-0feb-4ede-bab0-c5711a0b1d8a",
+          "uuid": "1e142b3c-e032-48fd-8f5d-7b70604c68f5",
           "title": "Login - Test Suite",
           "fullFile": "",
           "file": "",
@@ -115,7 +120,7 @@
               "title": "Login into the application with valid crediential",
               "fullTitle": "Login - Test Suite Login into the application with valid crediential",
               "timedOut": null,
-              "duration": 13150,
+              "duration": 6497,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -124,8 +129,8 @@
               "context": null,
               "code": "loginPage.enterUserNamePassword(this.data001.userName, this.data001.passWord);\nloginPage.verifyHomePageText(this.data001.homepageheadertext);\nloginPage.clickLogout();",
               "err": {},
-              "uuid": "610f0071-09b4-4e14-86d3-792ed18d9e5b",
-              "parentUUID": "7774c4ff-0feb-4ede-bab0-c5711a0b1d8a",
+              "uuid": "ae5dd748-2ce1-47d6-a3cf-dbe0b147aaa6",
+              "parentUUID": "1e142b3c-e032-48fd-8f5d-7b70604c68f5",
               "isHook": false,
               "skipped": false
             },
@@ -133,7 +138,7 @@
               "title": "Login into the application with Invalid crediential",
               "fullTitle": "Login - Test Suite Login into the application with Invalid crediential",
               "timedOut": null,
-              "duration": 3501,
+              "duration": 1507,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -142,21 +147,21 @@
               "context": null,
               "code": "loginPage.enterUserNamePassword(this.data002.userName, this.data002.passWord);\nloginPage.verifyHomePageText(this.data002.invalidusernamepasswordtext);",
               "err": {},
-              "uuid": "de3b6957-f467-4b9a-853c-ff19127a9701",
-              "parentUUID": "7774c4ff-0feb-4ede-bab0-c5711a0b1d8a",
+              "uuid": "ac247788-547f-404f-bbcb-84dccbfa0195",
+              "parentUUID": "1e142b3c-e032-48fd-8f5d-7b70604c68f5",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "610f0071-09b4-4e14-86d3-792ed18d9e5b",
-            "de3b6957-f467-4b9a-853c-ff19127a9701"
+            "ae5dd748-2ce1-47d6-a3cf-dbe0b147aaa6",
+            "ac247788-547f-404f-bbcb-84dccbfa0195"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 16651,
+          "duration": 8004,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -172,16 +177,16 @@
       "_timeout": 2000
     },
     {
-      "uuid": "48870e9d-3242-436c-bd05-2c10a9a56725",
+      "uuid": "97446a47-cbd0-4201-9b3e-4e18ac1a2d33",
       "title": "",
-      "fullFile": "cypress\\integration\\letsShare\\signup\\loginpage.js",
-      "file": "cypress\\integration\\letsShare\\signup\\loginpage.js",
+      "fullFile": "cypress\\integration\\letsShare\\signup\\loginpage.spec.js",
+      "file": "cypress\\integration\\letsShare\\signup\\loginpage.spec.js",
       "beforeHooks": [],
       "afterHooks": [],
       "tests": [],
       "suites": [
         {
-          "uuid": "1556b210-9690-4d8d-ba4c-54f1c3056328",
+          "uuid": "86ceb273-8d7c-448c-9519-34f334c5aa4b",
           "title": "Sign Up -Test Suite",
           "fullFile": "",
           "file": "",
@@ -192,7 +197,7 @@
               "title": "Login into the application with valid crediential",
               "fullTitle": "Sign Up -Test Suite Login into the application with valid crediential",
               "timedOut": null,
-              "duration": 12596,
+              "duration": 5656,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -201,8 +206,8 @@
               "context": null,
               "code": "loginPage.enterUserNamePassword(this.data001.userName, this.data001.passWord);\nloginPage.verifyHomePageText(this.data001.homepageheadertext);\nloginPage.clickLogout();",
               "err": {},
-              "uuid": "7e7ff7b0-5286-45a8-b691-393221c2b859",
-              "parentUUID": "1556b210-9690-4d8d-ba4c-54f1c3056328",
+              "uuid": "2b45c4b0-5d4d-40ee-8797-4eb0049e76ed",
+              "parentUUID": "86ceb273-8d7c-448c-9519-34f334c5aa4b",
               "isHook": false,
               "skipped": false
             },
@@ -210,7 +215,7 @@
               "title": "Login into the application with Invalid crediential",
               "fullTitle": "Sign Up -Test Suite Login into the application with Invalid crediential",
               "timedOut": null,
-              "duration": 3369,
+              "duration": 1852,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -219,21 +224,21 @@
               "context": null,
               "code": "loginPage.enterUserNamePassword(this.data002.userName, this.data002.passWord);\nloginPage.verifyHomePageText(this.data002.invalidusernamepasswordtext);",
               "err": {},
-              "uuid": "0a5058ad-5c65-4298-9bed-bd85dcddd814",
-              "parentUUID": "1556b210-9690-4d8d-ba4c-54f1c3056328",
+              "uuid": "a2170a7d-5f42-4823-aaed-2f888fcf744b",
+              "parentUUID": "86ceb273-8d7c-448c-9519-34f334c5aa4b",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "7e7ff7b0-5286-45a8-b691-393221c2b859",
-            "0a5058ad-5c65-4298-9bed-bd85dcddd814"
+            "2b45c4b0-5d4d-40ee-8797-4eb0049e76ed",
+            "a2170a7d-5f42-4823-aaed-2f888fcf744b"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 15965,
+          "duration": 7508,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

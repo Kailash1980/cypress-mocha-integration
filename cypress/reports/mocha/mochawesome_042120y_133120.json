@@ -1,0 +1,129 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2020-04-21T08:00:49.957Z",
+    "end": "2020-04-21T08:01:20.494Z",
+    "duration": 30537,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "7e759301-0ee3-405c-9405-dc994c23b15a",
+      "title": "",
+      "fullFile": "cypress\\integration\\letsShare\\askQuestion\\postquestion.spec.js",
+      "file": "cypress\\integration\\letsShare\\askQuestion\\postquestion.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "48760df1-ed79-41aa-b816-2dbe72c593a0",
+          "title": "Post Question",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "To verify when user enter data in all field and click on post button",
+              "fullTitle": "Post Question To verify when user enter data in all field and click on post button",
+              "timedOut": null,
+              "duration": 15607,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "loginPage.enterUserNamePassword(this.data001.userName, this.data001.passWord);\npostQuestion.clickAskQuestion();\npostQuestion.fillAskQuestionWithValidData(this.data003.topic, this.data003.topicvalue, this.data003.title, this.data003.description, this.data003.questionsavedmsg);\nloginPage.clickLogout();",
+              "err": {},
+              "uuid": "4c6a6fad-8eae-4990-a73b-1a3246e3d16c",
+              "parentUUID": "48760df1-ed79-41aa-b816-2dbe72c593a0",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "To verify when user keep description field blank and click on post button",
+              "fullTitle": "Post Question To verify when user keep description field blank and click on post button",
+              "timedOut": null,
+              "duration": 12664,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": "\"../screenshots/letsShare\\\\askQuestion\\\\postquestion.spec.js/Post Question -- To verify when user keep description field blank and click on post button (failed).png\"",
+              "code": "loginPage.enterUserNamePassword(this.data001.userName, this.data001.passWord);\npostQuestion.clickAskQuestion();\npostQuestion.fillAskQuestionWithInValidData(this.data003.keepdescriptionblankmsg);\nloginPage.clickLogout();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `.hJaQBP`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `.hJaQBP`, but never found it.\n    at ensureExistence (http://3.84.11.0/__cypress/runner/cypress_runner.js:137438:32)\n    at Object.ensureElExistence (http://3.84.11.0/__cypress/runner/cypress_runner.js:137456:12)\n    at ensureExistence (http://3.84.11.0/__cypress/runner/cypress_runner.js:127861:23)\n    at onFailFn (http://3.84.11.0/__cypress/runner/cypress_runner.js:127899:9)\n    at tryCatcher (http://3.84.11.0/__cypress/runner/cypress_runner.js:9059:23)\n    at Promise._settlePromiseFromHandler (http://3.84.11.0/__cypress/runner/cypress_runner.js:6994:31)\n    at Promise._settlePromise (http://3.84.11.0/__cypress/runner/cypress_runner.js:7051:18)\n    at Promise._settlePromise0 (http://3.84.11.0/__cypress/runner/cypress_runner.js:7096:10)\n    at Promise._settlePromises (http://3.84.11.0/__cypress/runner/cypress_runner.js:7172:18)\n    at _drainQueueStep (http://3.84.11.0/__cypress/runner/cypress_runner.js:3766:12)\n    at _drainQueue (http://3.84.11.0/__cypress/runner/cypress_runner.js:3759:9)\n    at Async.../../node_modules/bluebird/js/release/async.js.Async._drainQueues (http://3.84.11.0/__cypress/runner/cypress_runner.js:3775:5)\n    at Async.drainQueues (http://3.84.11.0/__cypress/runner/cypress_runner.js:3645:14)",
+                "diff": null
+              },
+              "uuid": "ea7c5143-7a28-4a90-9653-86869ae43b75",
+              "parentUUID": "48760df1-ed79-41aa-b816-2dbe72c593a0",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4c6a6fad-8eae-4990-a73b-1a3246e3d16c"
+          ],
+          "failures": [
+            "ea7c5143-7a28-4a90-9653-86869ae43b75"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 28271,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "5.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false
+      },
+      "version": "4.1.0"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports/mocha",
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "timestamp": "mmddyyy_HHMMss"
+      },
+      "version": "4.1.0"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 /// <reference types ="cypress"/>
 
-import LoginPage from '../../../support/page_data/loginpage/login_page'
+import LoginPage from '../../../support/page_data/loginpage/login_page.spec'
 
 const loginPage = new LoginPage()
 
